@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #fafafa;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.nav-mae {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-img {
+    height: 100%;
+    margin-top: 5px;
+}
+
+.search-box {
+    position: absolute;
+    left: 50%;
+    width: 200px;
+    height: 25px;
+    background-color: #fafafa;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: capitalize;
+    transform: translate(-50%);
+}
+
+.nav-items {
+    height: 22px;
+    position: relative;
+}
+
+.icon {
+    height: 100%;
+    cursor: pointer;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.user-profile {
+    border-radius: 50%;
+    width: 22px;
+}
+
+/*---------------------------------------*/
+
+.main {
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.wrapper {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 30px;
+}
+
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+}
+
+.status-box {
+   width: 100%;
+  height: 120px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  padding: 10px;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.status-box::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.status-card {
+  flex: 0 0 auto;
+  width: 80px;
+  max-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.profile {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 4px;
+    display: flex;
+    background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%);
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-top: -2px;
+    margin-left: -2px;
+  }
+  
